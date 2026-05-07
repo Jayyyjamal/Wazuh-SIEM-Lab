@@ -7,137 +7,48 @@
 
 ---
 
-# 📌 Overview
+# ⚙️ Lab Setup
 
-This project documents my hands-on Wazuh SIEM lab built to simulate real-world SOC operations.
+This lab was built using Wazuh SIEM deployed with Docker inside an Ubuntu virtual machine to simulate a real-world SOC environment.
 
-The lab focuses on:
+## 🖥️ Components Used
+
+- Wazuh Manager
+- Wazuh Dashboard
+- Wazuh Indexer
+- Windows 11 Endpoint Agent
+- Ubuntu Server
+- Oracle VirtualBox
+- Docker & Docker Compose
+
+---
+
+# 🎯 Purpose of the Lab
+
+The purpose of this project was to gain hands-on experience with:
+
+- Log collection and analysis
 - Threat detection
-- Log analysis
 - Threat hunting
-- MITRE ATT&CK mapping
 - Security monitoring
+- MITRE ATT&CK mapping
+- Incident investigation
+- Compliance monitoring
 
 ---
 
-# 🎯 Objectives
+# 🔍 What I Practiced
 
-- Deploy and configure Wazuh SIEM using Docker
-- Ingest and analyze endpoint security logs
-- Detect attack techniques
-- Conduct threat hunting
-- Improve SOC analyst skills
+During this lab, I:
+- Monitored endpoint activity in real time
+- Investigated security alerts
+- Analyzed Windows event logs
+- Detected registry modifications and file deletions
+- Conducted threat hunting using Wazuh dashboards
+- Mapped detections to MITRE ATT&CK techniques
+- Explored anomaly and compliance monitoring
 
----
-
-# 🏗️ Lab Architecture
-
-```text
-+----------------------+
-|   Wazuh Manager      |
-|     Ubuntu Server    |
-+----------+-----------+
-           |
-           |
-+----------v-----------+
-|    Windows Agent     |
-| Endpoint Monitoring  |
-+----------------------+
-```
-
----
-
-# ⚙️ Technologies Used
-
-- Wazuh SIEM
-- Docker
-- Ubuntu Linux
-- Windows 11
-- MITRE ATT&CK Framework
-- VirtualBox
-
----
-
-# 🚨 Detection Use Cases
-
-## Registry Modification (Persistence)
-Detected suspicious registry modifications linked to persistence techniques.
-
-### MITRE ATT&CK
-T1112 – Modify Registry
-
----
-
-## File Deletion (Defense Evasion)
-Monitored unauthorized file deletions and destructive behavior.
-
-### MITRE ATT&CK
-T1070 – Indicator Removal on Host
-
----
-
-## Data Destruction (Impact)
-Detected destructive actions affecting system integrity.
-
-### MITRE ATT&CK
-T1485 – Data Destruction
-
----
-
-# 🔍 Threat Hunting
-
-Conducted threat hunting using:
-- Process monitoring
-- Registry monitoring
-- Service analysis
-- Log correlation
-- Alert investigation
-
----
-
-# 📊 Key Skills Demonstrated
-
-- SIEM Deployment
-- Log Analysis
-- Threat Detection
-- Threat Hunting
-- MITRE ATT&CK Mapping
-- SOC Operations
-- Security Monitoring
-
----
-
-# 📸 Screenshots
-
-## MITRE ATT&CK Dashboard
-![MITRE](screenshots/mitre-dashboard.png)
-
-## Threat Hunting Dashboard
-![Threat Hunting](screenshots/threat-hunting.png)
-
-## GDPR Monitoring
-![GDPR](screenshots/gdpr-dashboard.png)
-
----
-
-# 🧠 Lessons Learned
-
-This project helped me:
-- Understand real-world SOC workflows
-- Improve SIEM analysis skills
-- Develop threat hunting techniques
-- Gain hands-on cybersecurity experience
-
----
-
-# 🚀 Future Improvements
-
-- Build custom Wazuh detection rules
-- Add automated alerting
-- Expand cloud monitoring
-- Integrate threat intelligence feeds
-
----
+This project helped me strengthen practical SIEM and SOC analyst skills through hands-on security monitoring and investigation.
 
 # 👤 Author
 
