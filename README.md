@@ -52,7 +52,7 @@ The lab focuses on:
 - Wazuh SIEM
 - Docker
 - Ubuntu Linux
-- Windows 10/11
+- Windows 11
 - MITRE ATT&CK Framework
 - VirtualBox
 
